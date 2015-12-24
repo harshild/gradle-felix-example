@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+<scr:component enabled="true" immediate="true"
+               name="com.harshild.felix.helloservice.HelloService">
+    <implementation class="com.harshild.felix.helloservice.HelloServiceImpl"/>
+    <property name="service.pid" value="com.harshild.felix.helloservice.HelloService"/>
+    <service>
+        <provide interface="com.harshild.felix.helloservice.HelloService"/>
+    </service>
+</scr:component>
+</components>

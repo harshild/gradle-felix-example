@@ -1,0 +1,15 @@
+
+jar {
+    manifest {
+        instruction 'Bundle-Activator', 'com.harshild.felix.helloservlet.Activator'
+        instruction 'Import-Package', '*'
+        instruction 'Export-Package', '*'
+        instruction 'Service-Component', 'OSGI-INF/serviceComponents.xml'
+        attributes( 'Built-By': gradle.gradleVersion, 'Bundle-Name': name, 'Bundle-Version': version )
+    }
+}
+
+dependencies {
+    compile 'javax.servlet:servlet-api:2.3'
+    compile project(":helloService")
+}

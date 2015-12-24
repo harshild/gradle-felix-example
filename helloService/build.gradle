@@ -1,0 +1,17 @@
+
+jar {
+    manifest {
+        version = version
+        name = name
+        instruction 'Bundle-Activator', 'com.harshild.felix.helloservice.Activator'
+        instruction 'Import-Package', '*'
+        instruction 'Export-Package', '*'
+        instruction 'Service-Component', 'OSGI-INF/serviceComponents.xml'
+        attributes( 'Built-By': gradle.gradleVersion )
+    }
+}
+
+dependencies {
+    compile 'org.apache.commons:commons-lang3:3.1'
+}
+
