@@ -5,13 +5,13 @@ buildscript {
         }
     }
     dependencies {
-        classpath name: 'felixLaunchpad-1.1.0'
+        classpath group: 'com.harshil.gradle', name: 'felix', version: '1.1.1'
     }
 }
 
-apply plugin: 'felix-launchpad'
+apply plugin: 'felix'
 
-felixLaunchpad {
+felix {
     logLevel = 2
     httpPort = 8080
     properties.'org.osgi.framework.system.packages.extra' = 'sun.misc'
