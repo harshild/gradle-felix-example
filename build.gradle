@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath group: 'com.harshil.gradle', name: 'felix-plugin', version: '1.3.0'
+        classpath group: 'com.harshil.gradle', name: 'felix-plugin', version: '1.3.1'
     }
 }
 
