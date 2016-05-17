@@ -1,13 +1,11 @@
 
 jar {
     manifest {
-        version = version
-        name = name
-        instruction 'Bundle-Activator', 'com.harshild.felix.helloservice.Activator'
-        instruction 'Import-Package', '*'
-        instruction 'Export-Package', '*'
-        instruction 'Service-Component', 'OSGI-INF/serviceComponents.xml'
         attributes( 'Built-By': gradle.gradleVersion )
+        attributes('Import-Package': '*')
+        attributes('Export-Package': '*')
+        attributes('Service-Component': 'OSGI-INF/serviceComponents.xml')
+        attributes('Bundle-Activator': 'com.harshild.felix.helloservice.Activator')
     }
 }
 
